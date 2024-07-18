@@ -1,0 +1,116 @@
+:root {
+    --underweight : blue;
+    --normal :green;
+    --overweight :lightcoral;
+    --obese : red;
+
+}
+
+body {
+    background-color: beige;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.option {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}
+
+.container {
+    width: 90%;
+    max-width: 420px;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px black;
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator {
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calculator label {
+    flex: 0 1 120px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calculator input {
+    flex: 1;
+    border: 1px solid white;
+    padding: 10px;
+    outline-color: aqua;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.calculator button {
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: pink;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.calculator button[type="reset"] {
+    background-color: gray;
+}
+
+.calculator button[type="submit"] {
+    background-color:pink;
+}
+
+.calculator button:hover {
+    filter: brightness(150%);
+}
+
+.output {
+    text-align: center;
+}
+
+.output #bmi {
+    font-size: 4rem;
+}
+
+.bmi-scale {
+    display: flex;
+}
+
+.bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+}
+
+.bmi-scale h4{
+    font-size: 0.75rem;
+    color: cornflowerblue;
+}
+
